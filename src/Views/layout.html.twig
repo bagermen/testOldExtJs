@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+<head>
+    <meta http-equiv="x-ua-compatible" content="IE=9">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="{{ app.request.basepath }}/resources/ext-3.4.1/adapter/ext/ext-base.js"></script>
+    <script type="application/javascript" src="{{ app.request.basepath }}/resources/ext-3.4.1/ext-all.js"></script>
+    <link rel="stylesheet"  href="{{ app.request.basepath }}/resources/ext-3.4.1/resources/css/ext-all.css">
+    {% block headStyles %}{% endblock %}
+    {% block headScripts %}{% endblock %}
+    <title>{% block title %}Test grid{% endblock %}</title>
+</head>
+<body id="body" style="min-height: 100%">
+{% block body %}{% endblock %}
+</body>
+</html>
